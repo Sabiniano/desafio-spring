@@ -58,5 +58,6 @@ public class ClientDTO {
                 .createdAt(client.getCreatedAt())
                 .updatedAt(LocalDate.now())
                 .build();
+                
     }
 }

@@ -32,6 +32,7 @@ public class ClientDTO {
     private double income;
     @NotBlank
     private String maritalStatus;
+    private String marital_status;
 
     public Client toEntity() {
         return Client.builder()
@@ -39,7 +40,7 @@ public class ClientDTO {
                 .age(this.age)
                 .dependents(this.dependents)
                 .income(this.income)
-                .marital_status(this.maritalStatus)
+                .marital_status(this.marital_status)
                 .createdAt(LocalDate.now())
                 .updatedAt(LocalDate.now())
                 .build();
@@ -52,7 +53,7 @@ public class ClientDTO {
                 .age(this.age)
                 .dependents(this.dependents)
                 .income(this.income)
-                .marital_status(this.maritalStatus)
+                .marital_status(this.marital_status)
                 .houses(client.getHouses())
                 .vehicles(client.getVehicles())
                 .createdAt(client.getCreatedAt())
